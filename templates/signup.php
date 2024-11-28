@@ -62,5 +62,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="../../sass/vendors/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
