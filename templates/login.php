@@ -19,6 +19,8 @@
                 <h1 class="text-center">Connexion</h1>
                 <p class="text-secondary text-center">Connectez-vous à votre compte</p><br>
 
+                <?php userLogin(); ?>
+                
                 <form method="POST" class="row gy-4">
                     <div class="col-12">
                         <label for="username" class="form-label">Nom d'utilisateur</label>
@@ -42,5 +44,7 @@
             </div>
         </div>
     </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
