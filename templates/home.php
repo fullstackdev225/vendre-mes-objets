@@ -64,7 +64,17 @@
                      </div>
 
                      <div class="col-md-9 articles-lists">
-                        
+                          <div class="row">
+                               <?php foreach($articles as $article) : ?>
+                                    <div class="col-md-3 border-white bg-white shadow m-3">
+                                       <a href="" class="text-decoration-none">
+                                            <img src="<?php echo $article["article_image"]; ?>" width="200" height="200" alt="">
+                                            <h2 class="text-dark"><?php echo $article["article_title"]; ?></h2>
+                                            <p class="text-dark"><?php echo $article["article_price"]; ?> FCFA</p>
+                                       </a>
+                                    </div>
+                                <?php endforeach; ?>
+                          </div>
                      </div>
                   </div> 
               </div>

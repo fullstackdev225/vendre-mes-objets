@@ -40,6 +40,7 @@
     <main>
         <section class="section-form">
              <div class="container">
+                <?php add(); ?>
                 <form method="POST" class="form">
                     <div class="form-section">
                         <div class="col-8">

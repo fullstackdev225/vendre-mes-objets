@@ -13,3 +13,16 @@ function getUserInfos(string $username){
 
     return $result;
 }
+
+
+function getUserId(string $username){
+     //we connect to database...
+     $database = dbConnect();
+
+     //we getting user id...
+     $request = $database->prepare('SELECT user_id FROM users WHERE username = ?');
+     $request->execute([$username]);
+     $result = $request->fetch();
+
+     return $result["user_id"];
+}
