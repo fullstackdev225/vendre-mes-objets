@@ -19,8 +19,8 @@
                             <h4 class="card-title"><?php echo $article["article_title"]; ?></h4>
                             <p class="card-text"><?php echo $article["article_price"]; ?> FCFA</p>
                             <p class="card-text"><?php echo $article["article_availability"]; ?></p>
-                            <a href="#" class="btn btn-primary">Modifier</a>
-                            <a href="#" class="btn btn-danger">Supprimer</a>
+                            <a href="putUpdate.php?article-id=<?php echo $article["article_id"]; ?>" class="btn btn-primary">Modifier</a>
+                            <a href="delete.php?article-id=<?php echo $article["article_id"]; ?>" class="btn btn-danger">Supprimer</a>
                         </div>
                     </div>
                 </div>
