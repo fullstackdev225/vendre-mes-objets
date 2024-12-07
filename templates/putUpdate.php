@@ -60,11 +60,12 @@
                     <div class="form-section">
                          <div class="col-8">
                             <label for="article-type" class="form-label">Catégorie</label>
-                            <select name="article-type" id="article-type" value="<?php echo $article["article_type"]; ?>" required class="form-control">
+                            <select name="article-type" id="article-type" required class="form-control">
                                 <option value="Vêtements et accéssoires">Vêtements et accéssoires</option>
                                 <option value="Outils">Outils</option>
                                 <option value="Electronique">Electronique</option>
                                 <option value="Autres">Autres</option>
+                                <option selected value="<?php echo $article["article_type"]; ?>"><?php echo $article["article_type"]; ?></option>
                             </select>
                          </div>
                     </div><br>
@@ -72,11 +73,12 @@
                     <div class="form-section">
                         <div class="col-8">
                             <label for="article-state" class="form-label">Etat</label>
-                            <select name="article-state" id="article-state" value="<?php echo $article["article_state"]; ?>" required class="form-control">
+                            <select name="article-state" id="article-state" required class="form-control">
                                 <option value="Neuf">Neuf</option>
                                 <option value="Comme neuf">Comme neuf</option>
                                 <option value="Bon état">Bon état</option>
                                 <option value="Assez bon état">Assez bon état</option>
+                                <option selected value="<?php echo $article["article_state"]; ?>"><?php echo $article["article_state"]; ?></option>
                             </select>
                         </div>
                     </div><br>
@@ -93,9 +95,10 @@
                     <div class="form-section">
                         <div class="col-8">
                             <label for="article-availability" class="form-label">Disponibilité</label>
-                            <select name="article-availability" id="article-availability" value="<?php echo $article["article_availability"]; ?>" required class="form-control">
+                            <select name="article-availability" id="article-availability" value="" required class="form-control">
                                 <option value="Unique">Unique</option>
                                 <option value="En stock">En stock</option>
+                                <option selected value="<?php echo $article["article_availability"]; ?>"><?php echo $article["article_availability"]; ?></option>
                             </select>
                         </div>
                     </div><br>
